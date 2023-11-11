@@ -1,13 +1,29 @@
+:root {
+    --color-one: black;
+    --color-two: white;
+    --border-color: white;
+    /*Fonts*/
+    --font-button: 'Roboto', sans-serif;
+    --font-text: 'Nunito', sans-serif;
+    --font-header: 'Poppins', sans-serif;
+
+}
+
 /*Global*/
 body {
-    background-color: black;
-    color: white;
+    background-color: var(--color-one);
+    color: var(--color-two);
 }
 button {
     cursor: pointer;
-    background-color: black;
-    color: white;
-    border: 3px solid white;
+    background-color: var(--color-one);
+    color: var(--color-two);
+    border: 3px solid var(--border-color);
+    transition: 0.35s;
+}
+button:hover {
+    background-color: var(--color-two);
+    color: var(--color-one);
 }
 
 /*Header*/
@@ -19,16 +35,9 @@ header {
     margin: 15px;
 }
 #bgithub {
-    border-radius: 20px;
+    border-radius: 10px;
     width: 142px;
-    font-family: 'Roboto', sans-serif;
-    transition: 0.35s;
-}
-#bgithub:hover {
-    border-radius: 5px;
-    color: black;
-    background-color: white;
-
+    font-family: var(--font-button);
 }
 
 /*Section*/
@@ -39,20 +48,14 @@ section {
     align-items: center;
 }
 #bgenerator {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-button);
     font-size: 20px;
     height: 48px;
     width: 384px;
-    border-radius: 20px;
-    transition: 0.35s;
-}
-#bgenerator:hover {
-    border-radius: 5px;
-    color: black;
-    background-color: white;
+    border-radius: 10px;
 }
 
 #pgenerator {
     padding-top: 10px;
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--font-text)
 }
