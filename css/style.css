@@ -1,0 +1,58 @@
+/*Global*/
+body {
+    background-color: black;
+    color: white;
+}
+button {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+}
+
+/*Header*/
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 15px;
+}
+#bgithub {
+    border-radius: 20px;
+    width: 142px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.35s;
+}
+#bgithub:hover {
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+
+}
+
+/*Section*/
+section {
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#bgenerator {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    height: 48px;
+    width: 384px;
+    border-radius: 20px;
+    transition: 0.35s;
+}
+#bgenerator:hover {
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+}
+
+#pgenerator {
+    padding-top: 10px;
+    font-family: 'Nunito', sans-serif;
+}
