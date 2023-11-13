@@ -5,10 +5,10 @@ document.getElementById("bgithub").addEventListener('click', () => {
 })
 
 //Button --> Generator Numbers
-const pgenerator = document.getElementById("pgenerator")
+const paragraphGenerator = document.getElementById("paragraphGenerator")
 document.getElementById("bgenerator").addEventListener('click', () => {
-    pgenerator.innerHTML = "";
+    paragraphGenerator.innerHTML = "";
     for(let i = 0; i <= 10; i++) {
-        pgenerator.innerHTML += "Número " + Math.floor(Math.random() * 100) + "<br>"
+        paragraphGenerator.innerHTML += "Número " + Math.floor(Math.random() * 100) + "<br>"
     }
 })
